@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Мой первый сайт</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f4ff; text-align: center; padding: 40px; }
+    h1   { color: #5b3cc4; }
+    button { font-size: 18px; padding: 10px 20px; border-radius: 8px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Привет! Это мой сайт</h1>
+  <p>Меня зовут Миша. Здесь будут мои проекты.</p>
+  <button onclick="say()">Нажми меня</button>
+  <p id="answer"></p>
+
+  <script>
+    function say() {
+      document.getElementById('answer').textContent = 'Ура, JavaScript работает!';
+    }
+  </script>
+</body>
+</html>
